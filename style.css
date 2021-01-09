@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eed7c5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 10px;
+
+}
+
+.box {
+    background-color: #b36a5e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box:first-of-type {
+    background-image: url(blush-palette.jpeg);
+    background-size: cover;
+}
+
+.box:nth-of-type(2) {
+    background-image: url(eyeshadow.jpeg);
+    background-size: cover;
+}
+
+.box:nth-of-type(3) {
+    background-image: url(nail-polish.jpeg);
+    background-size: cover;
+}
+
+.box:nth-of-type(4) {
+    background-image: url(perfume.jpeg);
+    background-size: center/cover;
+}
+
+.box:nth-of-type(5) {
+    background-image: url(skin-care.jpeg);
+    background-size: center/cover;
+}
+
+.box:nth-of-type(6) {
+    background-image: url(bath-products.jpeg);
+    background-size: cover;
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.title {
+    color: #c97c5d;
+    font-size: 65px;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.box h2 {
+    font-size: 45px;
+    color: #eee2df;
+    text-shadow: 2px 2px #b36a5e;
+    z-index: 4;
+    font-family: 'Dancing Script', cursive;
+
+}
+
